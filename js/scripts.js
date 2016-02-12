@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){var t=Array.prototype.slice.call($(".wow-spell"));t.forEach(function(t){var o=$(t),a=o.attr("data-id");$.getJSON("http://beta.wowdb.com/spells/"+a+"/tooltip?callback=?",function(t){o.attr("href","http://beta.wowdb.com/spells/"+a),o.append(t.Tooltip),console.log("Success")})})});
