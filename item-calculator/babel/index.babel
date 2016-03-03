@@ -1,0 +1,124 @@
+"use strict";
+
+// Get DOM elements
+const itemFormElement = {
+  startItemLevel : $('#itemlevel'),
+  startPrimaryStat : $('#primary'),
+  startSecondaryStat : $('#secondary'),
+  endItemLevel : $('#itemlevelEnd'),
+  endPrimaryStat : $('#primaryEnd'),
+  endSecondaryStat : $('#secondaryEnd'),
+  primaryChange: $('#primaryChange'),
+  secondaryChange: $('#secondaryChange')
+}
+
+let scalingData;
+
+// Get scaling data
+let dataPromise = new Promise(function(resolve, reject) {
+  $.get("https://www.googledrive.com/host/0B9NyITetfDW6MnJJRkJMRDg1dmc", function( data ) {
+    resolve(data);
+  })
+});
+
+dataPromise.then(
+  function(data) {
+    scalingData = data;
+    init(data);
+  }
+);
+
+// Initialize item level values
+let init = function(data) {
+  itemFormElement.startItemLevel
+    .find('option')
+    .remove();
+  itemFormElement.endItemLevel
+    .find('option')
+    .remove();
+  Object.keys(data).forEach(key => {
+    // Load in item levels
+    itemFormElement.startItemLevel
+      .append(`<option value="${key}">${key}</option>`);
+    itemFormElement.endItemLevel
+      .append(`<option value="${key}">${key}</option>`);
+  });
+};
+
+// Detect changes in items
+Object.keys(itemFormElement).forEach(key => {
+  itemFormElement[key].change(function() {
+    calculate();
+  });
+})
+
+$('.calculate').on('click', function(e) {
+  calculate();
+});
+
+// Calculation function
+let calculate = function() {
+  let figures = {};
+  Object.keys(itemFormElement).forEach(key => {
+    if (Array.isArray(itemFormElement[key].val())) {
+      figures[key] = itemFormElement[key].val()[0];
+    } else {
+      figures[key] = itemFormElement[key].val();
+    }
+  });
+  
+  // Check if both item levels have been selected
+  if (figures.startItemLevel && figures.endItemLevel) {
+    let primary = calculatePrimary(figures.startItemLevel, figures.endItemLevel, figures.startPrimaryStat)
+    let secondary = calculateSecondary(figures.startItemLevel, figures.endItemLevel, figures.startSecondaryStat);
+    itemFormElement.endPrimaryStat.val(Math.round(primary));
+    itemFormElement.endSecondaryStat.val(Math.round(secondary));
+    
+    
+    itemFormElement.primaryChange.val(`${((primary/figures.startPrimaryStat-1)*100).toFixed(2)}%`);
+    itemFormElement.secondaryChange.val(`${((secondary/figures.startSecondaryStat-1)*100).toFixed(2)}%`)
+  };
+};
+
+// Regular calculation for primary
+let calculatePrimary = function(initial, target, primary) {
+  if (target > initial) {
+    let difference = target-initial;
+    return primary * Math.pow(1.01, difference);
+  } else {
+    let difference = initial-target;
+    return primary / Math.pow(1.01, difference);
+  }
+};
+
+
+// Recursive calculation for secondary
+let calculateSecondary = function(current, target, secondary) { 
+  if (target == current) {
+    return secondary;
+  }
+
+  // Recurse until we arrive at our value
+  if (current/1 <= target/1) {
+    current++;
+    if (current <= target) {
+      let scalar = scalingData[current] ? scalingData[current] : scalingData[current-1];
+      secondary = secondary * (1 + (scalingData[current] / 100));
+      if (current !== target) {
+        return calculateSecondary(current, target, secondary);
+      }
+    }
+  } else if (current/1 >= target/1) {
+    current--;
+    if (current >= target) {
+      let scalar = scalingData[current + 1] ? scalingData[current + 1] : scalingData[current];
+      secondary = secondary / (1 + (scalar / 100));
+      if (current !== target) {
+        return calculateSecondary(current, target, secondary);
+      }
+    }
+  };
+  
+  
+  
+};

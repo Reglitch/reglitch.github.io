@@ -1,0 +1,65 @@
+.container
+  .page-header
+    h1 Legion Item Statistic Calculator
+.container
+  .row
+    .col-md-6
+      .panel.panel-default
+        .panel-heading Starting Item
+        .panel-body
+          form.form-horizontal
+            fieldset
+              // Item Level Selection
+              .form-group
+                label.col-md-4.control-label(for="itemlevel") Item Level
+                .col-md-8
+                  select.form-control#itemlevel(name="itemlevel" multiple="multiple")
+                    option(value="800") 800
+              // Primary Stat Input
+              .form-group
+                label.col-md-4.control-label(for='primary') Primary Stat
+                .col-md-8
+                  input#primary.form-control.input-md(name='primary', type='number', value="1000")
+              // Secondary Stat Input
+              .form-group
+                label.col-md-4.control-label(for='secondary') Secondary Stat
+                .col-md-8
+                  input#secondary.form-control.input-md(name='secondary', type='number', value="500")
+    .col-md-6
+      .panel.panel-default
+        .panel-heading End Item
+        .panel-body
+          form.form-horizontal
+            fieldset
+              // Item Level Selection
+              .form-group
+                label.col-md-4.control-label(for="itemlevelEnd") Item Level
+                .col-md-8
+                  select.form-control#itemlevelEnd(name="itemlevelEnd" multiple="multiple")
+                    option(value="800") 800
+              // Primary Stat Input
+              .form-group
+                label.col-md-4.control-label(for='primaryEnd') Primary Stat
+                .col-md-8
+                  input#primaryEnd.form-control.input-md(disabled name='primaryEnd', type='number', value="1000")
+              // Secondary Stat Input
+              .form-group
+                label.col-md-4.control-label(disabled for='secondaryEnd') Secondary Stat
+                .col-md-8
+                  input#secondaryEnd.form-control.input-md(name='secondaryEnd', type='number', value="500", disabled)
+.container
+  .panel.panel-info
+    .panel-heading Change Details
+    .panel-body
+      form.form-horizontal
+        fieldset
+          .form-group
+            label.col-md-4.control-label(for="primaryChange") Primary Change (%)
+            .col-md-6
+              input#primaryChange.form-control.input-md(disabled, type='text', name="primaryChange")
+          .form-group
+            label.col-md-4.control-label(for="secondaryChange") Secondary Change (%)
+            .col-md-6
+              input#secondaryChange.form-control.input-md(disabled, type='text', name="secondaryChange")
+.container
+  button.calculate.btn.btn-large.btn-success.btn-block Calculate
