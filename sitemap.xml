@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://bestmonk.xyz/memes</loc>
-        <lastmod>2016-02-12</lastmod>
+        <loc>http://bestmonk.xyz/item-calculator</loc>
+        <lastmod>2016-03-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://bestmonk.xyz/item-calculator</loc>
-        <lastmod>2016-03-03</lastmod>
+        <loc>http://bestmonk.xyz/memes</loc>
+        <lastmod>2016-02-12</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
@@ -20,19 +20,25 @@
     </url>
     <url>
         <loc>http://bestmonk.xyz/blog/item-level-budgeting-changes</loc>
-        <lastmod>2016-03-03</lastmod>
+        <lastmod>2016-03-14</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://bestmonk.xyz/blog/mistweaver-design-space</loc>
+        <lastmod>2016-03-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://bestmonk.xyz/blog/1/index.html</loc>
-        <lastmod>2016-03-03</lastmod>
+        <lastmod>2016-03-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://bestmonk.xyz/blog/index.html</loc>
-        <lastmod>2016-03-03</lastmod>
+        <lastmod>2016-03-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
