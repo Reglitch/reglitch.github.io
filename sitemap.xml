@@ -31,14 +31,20 @@
         <priority>0.5</priority>
     </url>
     <url>
+        <loc>http://bestmonk.xyz/blog/gust-of-mists-and-spell-selection</loc>
+        <lastmod>2016-04-11</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
         <loc>http://bestmonk.xyz/blog/1/index.html</loc>
-        <lastmod>2016-03-14</lastmod>
+        <lastmod>2016-04-11</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://bestmonk.xyz/blog/index.html</loc>
-        <lastmod>2016-03-14</lastmod>
+        <lastmod>2016-04-11</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
