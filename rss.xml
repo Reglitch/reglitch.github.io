@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Best Monk]]></title><description><![CDATA[Best Monk]]></description><link>http://bestmonk.xyz</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 11 Apr 2016 22:55:37 GMT</lastBuildDate><atom:link href="http://bestmonk.xyz/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Gust of Mists and Spell Selection]]></title><description><![CDATA[<h2 id="no-it-s-not-broken">No, It&#39;s Not Broken</h2>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Best Monk]]></title><description><![CDATA[Best Monk]]></description><link>http://bestmonk.xyz</link><generator>metalsmith-feed</generator><lastBuildDate>Sat, 16 Apr 2016 11:39:35 GMT</lastBuildDate><atom:link href="http://bestmonk.xyz/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[“Refocusing Each Spec Around Their Core Concepts”]]></title><description><![CDATA[<p>I was originally going to give my opinion on each change, change isn&#39;t necessarily bad, I feel the weight of removals in comparison to additions speaks volumes without injecting my own opinion into things. For that reason, this post will <strong>only</strong> list changes.</p>
+<h2 id="what-mistweaver-has-lost">What Mistweaver Has Lost</h2>
+<ul>
+<li>Eminence, a method of doing damage and healing at the same time. Along with the position-based gameplay of statue and player placement.</li>
+<li>Crane Stance, along with accompanying buffs such as Tiger Strikes and Vital Mists.</li>
+<li>Mana Tea, removing a significant amount of proactive gameplay.</li>
+<li>Chi, killing any remnants of proactive gameplay.</li>
+<li>Zen Meditation, a method of &quot;soaking&quot; exceptionally hard hitting abilities in raids.</li>
+<li>The ability to &quot;soak&quot; magic damage with Diffuse Magic.</li>
+<li>Fortifying Brew, a standard baseline defensive cooldown.</li>
+<li>Gift of the Serpent.</li>
+<li>Vital Mists and Tiger Power, two powerful melee buffs to track.</li>
+<li>Spinning Crane Kick.</li>
+<li>Uplift, and the interaction it had with Renewing Mist.</li>
+<li>Jade Mists.</li>
+<li>Detonate Chi.</li>
+<li>Touch of Death.</li>
+<li>Spear Hand Strike.</li>
+<li>Nimble Brew.</li>
+<li>Expel Harm.</li>
+</ul>
+<h2 id="what-mistweaver-has-gained">What Mistweaver Has Gained</h2>
+<ul>
+<li>Gust of Mist.</li>
+<li>Vivify.</li>
+<li>Essence Font.</li>
+<li>Sheilun&#39;s Gift.</li>
+</ul>
+<hr>
+<blockquote>
+<p>What you’re seeing in Legion falls under one of two different goals:</p>
+<p>-Refocusing each spec around their core concepts</p>
+<p>-Reduced reliance on cooldowns, both offensive and defensive</p>
+</blockquote>
+<p><a href="http://blue.mmo-champion.com/topic/408573-on-pruning-pvp-and-our-goals-for-legion/">Source</a></p>
+]]></description><link>http://bestmonk.xyz/blog/refocusing-each-spec-around-their-core-concepts</link><guid isPermaLink="true">http://bestmonk.xyz/blog/refocusing-each-spec-around-their-core-concepts</guid><dc:creator><![CDATA[Reglitch]]></dc:creator><pubDate>Sat, 16 Apr 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Gust of Mists and Spell Selection]]></title><description><![CDATA[<h2 id="no-it-s-not-broken">No, It&#39;s Not Broken</h2>
 <p>Yes, Gust of Mists does not effect Area of Effect healing, this does not mean that it is inherently broken. It creates a gearing strategy that removes Essence Font from your spell selection pool in a lot of situations. You do not necessarily lose healing from this omission though, as Gust of Mists is over-budgeted for a lot of spells.</p>
 <h2 id="budget-comparison">Budget Comparison</h2>
 <p>Take a look at rating conversion rates:</p>
@@ -60,8 +95,8 @@
 <p>Both of these spells get easily outmatched by Gust of Mists on Effuse. Yet they both fit in the criteria for Gust of Mists&#39; beneficiaries, creating a situation where these spells simply won&#39;t be used. For example, why risk a volatile change in position for a smaller heal?</p>
 <p>Mistwalk in particular can be used ~20% more often than Transcendence, but offers little in the way of the functionality that Transcendence has. Transcendence is an ability that is used to go places where players aren&#39;t at already, Mistwalk lacks that major use case and a tiny 350% heal does not bring it to standard - particularly when the opportunity cost of not taking either Chi Burst or Zen Pulse exists.</p>
 <p>It is clear that Chi Torpedo served as a mobility/heal combination far better than Mistwalk ever will; as it let you heal the raid and move with them when necessary. For Mistwalk to serve the same purpose; you would have to wait in the same area players moved from to get the mobility benefit - arguably killing yourself in the process. Ultimately the ability feels like something that Holy Paladins would benefit more from.</p>
-<p>Sheilun&#39;s Gift is a little more complex, if the current alpha behavior of stacking to 12 continues - then it will exist as a seldom used ability. It will still be used however, so it would exist in the same area as Essence Font in terms of being an ability that becomes less frequently selected, but when it is that selection is particularly in favor of the spell. If it does not however, the spell is simply phased out completely.</p>
-<p>So to conclude, Gust isn&#39;t a broken mastery in any sense of the term - it&#39;s simply unique. There are some potential problem areas where it can simply envelop other spells however, and it would be nice to see these cleaned up a little bit. Especially in the case of Mistwalk, there is a problem of finding an actual use case for a heal and mobility combo that heals a single target and forces you to lag behind them. This simply doesn&#39;t happen in PvE, meaning the only realistic use for the ability is battlefield traversal; something we have next to no need of.</p>
+<p>Sheilun&#39;s Gift is a little more complex, if the current alpha behavior of stacking to 12 continues - then it will exist as a seldom used ability. It will still be used however, so it would exist in the same area as Essence Font in terms of being an ability that becomes less frequently selected, but when it is that selection is particularly in favor of the spell. If it does not stack beyond an easily attainable mastery value, the spell will simply be phased out completely.</p>
+<p>So to conclude, Gust isn&#39;t a broken mastery in any sense of the term - it&#39;s simply unique in it&#39;s implementation. There are some potential problem areas where it can simply phase out other spells, and it would be nice to see these areas cleaned up. Especially in the case of Mistwalk, there is the problem of finding an actual use case for a heal and mobility combo that heals a single target and forces you to lag behind them. This simply doesn&#39;t happen in PvE, meaning the only realistic use for the ability is battlefield traversal; something we have next to no need of.</p>
 ]]></description><link>http://bestmonk.xyz/blog/gust-of-mists-and-spell-selection</link><guid isPermaLink="true">http://bestmonk.xyz/blog/gust-of-mists-and-spell-selection</guid><dc:creator><![CDATA[Reglitch]]></dc:creator><pubDate>Mon, 11 Apr 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Mistweaver Design Space]]></title><description><![CDATA[<h2 id="a-utility-post-really-">A Utility Post? Really?</h2>
 <p>No, not a utility post. Let&#39;s dispel once and for all with this fiction that I don&#39;t know what I&#39;m doing. I know EXACTLY what I&#39;m doing. I am undertaking a systematic effort to change this game, to make Mistweaver more like the rest of the healers. Joking aside, this post isn&#39;t looking strictly at utility, instead we&#39;re just looking at buttons that each specialization has that doesn&#39;t fall under typical healing spell selection. For some classes this gets a little blurred, but where that happens I&#39;ll make an argument as to why it falls outside that definition.</p>
 <p>I firmly believe that there is a problem worth noting here, one that for reasons of ensuring variety and fun should be looked at.   This problem is that baseline abilities provide an anchor for which to augment the specialization through other avenues such as set bonuses, or artifact traits. Both of which look very boring for Mistweaver, I&#39;m not sure it&#39;s a coincidence.</p>
